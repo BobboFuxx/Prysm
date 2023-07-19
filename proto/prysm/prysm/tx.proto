@@ -1,0 +1,7 @@
+syntax = "proto3";
+package prysm.prysm;
+
+option go_package = "prysm/x/prysm/types";
+
+// Msg defines the Msg service.
+service Msg {}

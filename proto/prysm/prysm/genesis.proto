@@ -1,0 +1,12 @@
+syntax = "proto3";
+package prysm.prysm;
+
+import "gogoproto/gogo.proto";
+import "prysm/prysm/params.proto";
+
+option go_package = "prysm/x/prysm/types";
+
+// GenesisState defines the prysm module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
